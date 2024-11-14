@@ -738,12 +738,12 @@ These could be included, but Opera handles them incorrectly:
   refBox.onmouseover = function (e) {refDropdown.onmouseover();};
   refBox.onmouseout  = function (e) {refDropdown.onmouseout();};
   refBoxPin.onclick  = function (e) {
-    this.src = "images/" + (hasClass("pinned", refBox) ? "pin" : "pinned") + ".gif";
+    this.src = "img/" + (hasClass("pinned", refBox) ? "pin" : "pinned") + ".gif";
     toggleClass("pinned", refBox);
   };
   refBoxClose.onclick = function (e) {
     swapClass("pinned", "hidden", refBox);
-    refBoxPin.src = "images/pin.gif";
+    refBoxPin.src = "img/pin.gif";
   };
 
   if (isIE6) {
